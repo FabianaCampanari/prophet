@@ -111,7 +111,7 @@ jobs:
         find . -name '*.whl' -exec mv '{}' dist/ \;
 
     - name: Upload
-      uses: pypa/gh-action-pypi-publish@v1.4.2
+      uses: pypa/gh-action-pypi-publish@v1.13.0
       with:
         user: ${{ secrets.PYPI_USERNAME }}
         password: ${{ secrets.PYPI_PASSWORD }}
